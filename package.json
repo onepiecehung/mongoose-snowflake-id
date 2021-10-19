@@ -1,0 +1,37 @@
+{
+  "name": "mongoose-snowflake-id",
+  "version": "1.0.0",
+  "description": "Snowflake ID auto-generating plugin",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onepiecehung/mongoose-snowflake-id.git"
+  },
+  "keywords": [
+    "snowflake-id",
+    "snowflake",
+    "mongoose-plugin",
+    "mongoose",
+    "id",
+    "generator",
+    "unique",
+    "node.js",
+    "nodejs",
+    "mongo"
+  ],
+  "author": "onepiecehung, ds112",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/onepiecehung/mongoose-snowflake-id/issues"
+  },
+  "homepage": "https://github.com/onepiecehung/mongoose-snowflake-id#readme",
+  "dependencies": {
+    "mongoose": "^6.0.11",
+    "nodejs-snowflake": "^1.6.2"
+  }
+}
