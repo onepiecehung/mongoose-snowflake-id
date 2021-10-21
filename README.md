@@ -46,9 +46,18 @@ BookSchema.plugin(snowflakeId, {
 });
 ```
 
-### Config
+### Configuration
 
 -   **field**: string; // Defaults to snowflakeId
+
+UniqueID constructor takes in the following configuration
+
 -   **customEpoch**: number; // Defaults to the current time. This is UNIX timestamp in ms, EX: 1546300800000 (01-01-2019) , (config for SnowflakeId)
 -   **machineId**: number; // A value ranging between 0 - 4095. Defaults to 112 (config for SnowflakeId)
 -   **type**: Boolean; // Defaults to true. If set to false, defaults to number (type of field)
+
+## Note
+
+This note copy from https://github.com/utkarsh-pro/nodejs-snowflake
+
+Snowflake ID auto-generating is a fast and reliable way to generate time sortable 64-bit ids written for distributed systems. The main id generation function is written in C++ using N-API which makes the process of id generation extremely fast. The usage of C++ for id generation also guarantees that the generated number will be of size 64 bits.
