@@ -1,6 +1,6 @@
 {
   "name": "mongoose-snowflake-id",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Snowflake ID auto-generating plugin",
   "main": "src/index.js",
   "types": "src/index.d.ts",
