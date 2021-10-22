@@ -24,4 +24,10 @@ export default function snowflakeId(schema: Schema, options: TOptions) {
         }).getUniqueID();
         next();
     });
+    /**
+     * Create index
+     */
+    const index: any = {};
+    index[`${field}`] = 1;
+    schema.index(index);
 }

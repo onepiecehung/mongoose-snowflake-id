@@ -15,5 +15,11 @@ function snowflakeId(schema, options) {
         }).getUniqueID();
         next();
     });
+    /**
+     * Create index
+     */
+    const index = {};
+    index[`${field}`] = 1;
+    schema.index(index);
 }
 exports.default = snowflakeId;
